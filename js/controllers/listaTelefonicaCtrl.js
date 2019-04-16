@@ -67,10 +67,20 @@ angular.module("listaTelefonica").controller("listaTelefonicaCtrl", function($sc
 				$scope.contatoForm.$setPristine();
 			};*/
 
-			$scope.apagarContatos = function(contatos){
+			/*$scope.apagarContatos = function(contatos){
 				$scope.contatos = contatos.filter(function(contato){
 					if (!contato.selecionado) return contato;
 					
+				});
+			}; */
+
+
+
+			$scope.apagarContatos = function(contato){
+				contatosApi.deleteContato(contato).then(function(response){
+					delete $scope.contato;
+					$scope.contatoForm.$setPristine();
+					carregarContato();
 				});
 			};
 

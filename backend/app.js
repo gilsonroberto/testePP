@@ -51,6 +51,14 @@ app.put('/app', function(req, res){
   res.json(true);
 });
 
+
+app.delete('/app', function(req,res){
+  console.log(req.body);
+  contatos = contatos.filter(x => x.serial != req.body.serial);
+  console.log(contatos);
+  res.json(true);
+});
+
 app.get('/operadoras', function(req, res) {
   res.json(operadoras);
 });
