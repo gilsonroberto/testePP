@@ -39,10 +39,45 @@
 					</table>
 				</div>
 			</div>
-			<div class="row">					
-				<form name="contatoForm">
-					<h5 class="bold" ng-if="isContatoSelecionado(contatos)">{{refresh}}</h5>
-				</form>
+			<form name="contatoForm">
+				<h5 class="bold" ng-if="isContatoSelecionado(contatos)">{{refresh}}</h5>
+				<div class="row">
+					<div class="col-md-12">
+						<input class="form-control" type="text" name="nome" placeholder="Nome" ng-model="contato.nome" ng-required="true" ng-minlength="10"/>
+						<input class="form-control" type="text" name="telefone" placeholder="Telefone" ng-model="contato.telefone" ng-required="true" ng-pattern="/^\d{4,5}-\d{4}$/"/>
+						<select class="form-control" ng-model="contato.operadora" ng-options="operadora.nome + '(' + (operadora.preco | currency) + ')' group by operadora.categoria for operadora in operadoras | orderBy:'nome'" >
+							<option value="">Selecione uma operadora</option>
+						</select>
+					</div>
+				</div>
+			</form>
+			<div ng-messages="contatoForm.nome.$error">
+				<div class="alert alert-danger" ng-message="required" ng-show="contatoForm.nome.$dirty">
+					Por favor preencha o campo nome!
+				</div>
+				<div class="alert alert-danger" ng-message="minlength">
+					O campo nome deve ter no minimo 10 caracteres!
+				</div>
+			</div>
+			<div ng-messages="contatoForm.telefone.$error">
+				<div ng-message="required" ng-show="contatoForm.telefone.$dirty" class="alert alert-danger" class="alert alert-danger">
+					Por favor preencha o campo telefone!
+				</div>
+				<div ng-message="pattern" class="alert alert-danger">
+					Campo telefone deve ter o formato DDDDD-DDDD
+				</div>
+			</div>
+			<br/>
+			<div class="row">
+				<div class="col-md-4">
+					<button class="btn btn-primary btn-block" ng-click="adicionarContato(contato)" ng-disabled="contatoForm.$invalid" style="text-align: center;" >Adicionar Contato</button>
+				</div>
+				<div class="col-md-4">
+					<button class="btn btn-warning btn-block" ng-click="alterarContato(contato)" ng-if="isContatoSelecionado(contatos)"  style="text-align: center;">Alterar Contatos</button>
+				</div>
+				<div class="col-md-4">
+					<button class="btn btn-danger btn-block" ng-click="apagarContatos(contatos)" ng-if="isContatoSelecionado(contatos)"  style="text-align: center;">Apagar Contatos</button>
+				</div>
 			</div>
 		</div>
 	</body>
