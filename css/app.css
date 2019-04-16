@@ -14,10 +14,10 @@
  	margin-bottom: 5px;	
 }
 
-.select {
+.selecionado {
 	background-color: yellow;
 }
 
-.bold {
+.negrito {
 	font-weight: bold;
 }
