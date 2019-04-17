@@ -3,6 +3,7 @@
 <html ng-app="listaTelefonica">
 	<head>
 		<title>Lista Telefonica</title>
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="css/app.css">
 	</head>
@@ -12,7 +13,7 @@
 			{{statustext}}
 			<div class="row">
 				<div class="col-md-12">
-					<input class="form-control" type="text"  ng-model="criterioDeBusca" placeholder="O que você está buscando?">
+					<input class="form-control" type="text"  ng-model="criterioDeBusca" placeholder="Buscar"/>
 				</div>
 			</div>
 			<div class="row">
@@ -73,10 +74,10 @@
 					<button class="btn btn-primary btn-block" ng-click="adicionarContato(contato)" ng-disabled="contatoForm.$invalid" style="text-align: center;" >Adicionar Contato</button>
 				</div>
 				<div class="col-md-4">
-					<button class="btn btn-warning btn-block" ng-click="alterarContato(contato)" ng-if="isContatoSelecionado(contatos)"  style="text-align: center;">Alterar Contatos</button>
+					<button class="btn btn-warning btn-block" ng-click="alterarContato(contato)" ng-if="isContatoSelecionado(contatos)"  style="text-align: center;">Alterar Contato</button>
 				</div>
 				<div class="col-md-4">
-					<button class="btn btn-danger btn-block" ng-click="apagarContatos(contato)" ng-if="isContatoSelecionado(contatos)"  style="text-align: center;">Apagar Contatos</button>
+					<button class="btn btn-danger btn-block" ng-click="apagarContatos(contato)" ng-if="isContatoSelecionado(contatos)"  style="text-align: center;">Apagar Contato</button>
 				</div>
 			</div>
 		</div>
