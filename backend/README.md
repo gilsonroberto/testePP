@@ -12,7 +12,7 @@ Instalar o Node e o NPM é bastante simples usando o pacote de instalação disp
 3.	Siga os prompts no instalador (Aceite o contrato de licença, clique no botão NEXT várias vezes e aceite as configurações de instalação padrão).
 4.	Reinicie seu computador. Você não poderá executar o Node.js® até reiniciar o computador.
 
-![](https://github.com/gilsonroberto/testePP/blob/master/backend/PNG/installerNode.png)
+![](https://github.com/gilsonroberto/testePP/blob/master/backend/png/installerNode.png)
 
 # Instalando Express
 Após instalação do NodeJs, vamos instalar o Express, para isso iniciaremos o prompt do NodeJs e em  seguida vamos digitar
@@ -29,12 +29,12 @@ Para iniciar o desenvolvimento com Express primeiro é preciso instalá-lo, há 
 Depois de instalado você deve navegar até o diretório onde salvou o arquivo “app.js”
 
 
-![]( https://github.com/gilsonroberto/testePP/blob/master/backend/PNG/express1.PNG)
+![]( https://github.com/gilsonroberto/testePP/blob/master/backend/png/express1.PNG)
 
 Identificado o diretório basta rodar o arquivo.
 
 
-![]( https://github.com/gilsonroberto/testePP/blob/master/backend/PNG/express.png)
+![]( https://github.com/gilsonroberto/testePP/blob/master/backend/png/express.png)
 
 Pronto já temos uma base para que possamos consumir no frontend.
 
