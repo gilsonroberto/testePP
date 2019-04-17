@@ -10,8 +10,9 @@ Instalar o Node e o NPM é bastante simples usando o pacote de instalação disp
 1.	Baixe o instalador do Windows no site do [Node.js®]( https://nodejs.org/en/download/).
 2.	Execute o instalador (o arquivo .msi que você baixou na etapa anterior).
 3.	Siga os prompts no instalador (Aceite o contrato de licença, clique no botão NEXT várias vezes e aceite as configurações de instalação padrão).
-![](https://github.com/gilsonroberto/testePP/blob/master/backend/installerNode.png)
 4.	Reinicie seu computador. Você não poderá executar o Node.js® até reiniciar o computador.
+
+![](https://github.com/gilsonroberto/testePP/blob/master/backend/installerNode.png)
 
 # Instalando Express
 Após instalação do NodeJs, vamos instalar o Express, para isso iniciaremos o prompt do NodeJs e em  seguida vamos digitar
