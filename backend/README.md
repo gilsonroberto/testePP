@@ -18,15 +18,22 @@ Instalar o Node e o NPM é bastante simples usando o pacote de instalação disp
 Após instalação do NodeJs, vamos instalar o Express, para isso iniciaremos o prompt do NodeJs e em  seguida vamos digitar
 
 ...
+
 $ npm install express
+
 ...
+
 
 Para iniciar o desenvolvimento com Express primeiro é preciso instalá-lo, há muitas formas de fazer isso, porém a mais fácil é através da npm.
 
 Depois de instalado você deve navegar até o diretório onde salvou o arquivo “app.js”
+
+
 ![]( https://github.com/gilsonroberto/testePP/blob/master/backend/express1.PNG)
 
 Identificado o diretório basta rodar o arquivo.
+
+
 ![]( https://github.com/gilsonroberto/testePP/blob/master/backend/express.png)
 
 Pronto já temos uma base para que possamos consumir no frontend.
