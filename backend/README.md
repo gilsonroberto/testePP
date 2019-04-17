@@ -39,3 +39,12 @@ Identificado o diretório basta rodar o arquivo.
 Pronto já temos uma base para que possamos consumir no frontend.
 
 
+# Fontes 
+
+[](https://coderwall.com/p/mbov6w/running-nodejs-and-express-on-windows)
+
+[](https://blog.teamtreehouse.com/install-node-js-npm-windows)
+
+[](https://expressjs.com/pt-br/starter/installing.html)
+
+
